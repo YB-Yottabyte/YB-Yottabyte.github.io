@@ -1,2 +1,3 @@
 # YB-Yottabyte.github.io
 This repository contains files for CIS300 Project Assignments.
+The name of my website is DevTools Hub. The topic of my website is about different software tools that help programmers and students work more effectively and improve their coding experience. It will introduce and explain tools such as code editors like Visual Studio Code and Sublime Text, version control tools like Git and GitHub, and design tools such as Figma and Canva. Each page will describe what the tool is used for, its main features, and why it is helpful for beginners. The goal of my website is to guide new developers and students in choosing the right tools to start their programming journey and to make learning easier, and more fun.
