@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Hub - Resources</title>
+    <meta name="description" content="Find helpful resources, tutorials, and comparison tables for various development tools.">
+    <meta name="keywords" content="resources, tutorials, comparison, development tools, learning">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+            </a>
+            
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Editors</a></li>
+                <li><a href="version-tools.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Design</a></li>
+                <li><a href="resources.html" class="nav-link active relative px-3 py-2 text-cyan-400 font-bold">Resources</a></li>
+                <li><a href="contact.html" class="nav-link relative px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">Contact</a></li>
+            </ul>
+
+            <input type="checkbox" id="mobileMenuToggle" class="hidden">
+            <label for="mobileMenuToggle" class="md:hidden text-cyan-400 hover:text-white transition-colors cursor-pointer">
+                <i class="fas fa-bars text-2xl"></i>
+            </label>
+        </nav>
+
+        <div id="mobileMenu" class="md:hidden bg-gray-900/98 backdrop-blur-lg border-t border-gray-700/50 mobile-menu-hidden">
+            <ul class="flex flex-col py-4">
+                <li><a href="index.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Editors</a></li>
+                <li><a href="version-tools.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Design</a></li>
+                <li><a href="resources.html" class="block px-6 py-3 text-cyan-400 font-bold border-l-4 border-cyan-400">Resources</a></li>
+                <li><a href="contact.html" class="block mx-6 my-3 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg text-center">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-fade-in">
+        <!-- Big Hero Section -->
+        <section class="min-h-[80vh] flex items-center bg-gradient-to-br from-gray-900 via-gray-900 to-yellow-900/30 border-b border-gray-800">
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Left: Text Content -->
+                    <div class="animate-fade-in-up">
+                        <span class="inline-block px-4 py-2 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-semibold tracking-wide uppercase mb-8 border border-yellow-500/30">
+                            <i class="fas fa-graduation-cap mr-2"></i>Learning Hub
+                        </span>
+                        
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                            Resources
+                        </h1>
+                        <p class="text-2xl text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text font-semibold mb-8">
+                            & Tutorials
+                        </p>
+                        
+                        <p class="text-xl text-gray-300 leading-relaxed mb-10 max-w-xl">
+                            Find helpful resources, comparison tables, and tutorials. 
+                            Everything you need to master programming tools and grow as a developer.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Side-by-side tool comparisons</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Video tutorials from experts</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Official documentation links</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#resources" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-bold rounded-xl hover:from-yellow-600 hover:to-orange-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-arrow-down mr-3"></i>
+                            Start Learning
+                        </a>
+                    </div>
+
+                    <!-- Right: Icon Display -->
+                    <div class="relative animate-fade-scale">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-8 border border-gray-700/50">
+                            <div class="text-center">
+                                <i class="fas fa-book-reader text-9xl text-yellow-400/70 mb-6"></i>
+                                <p class="text-gray-400 text-lg">Learn, compare, and grow</p>
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 px-5 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl text-white font-semibold shadow-lg">
+                                <i class="fas fa-play-circle mr-2"></i>Tutorials & More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="container mx-auto px-6 py-16">
+            <!-- Tools Comparison Section Header -->
+            <div id="resources" class="text-center mb-12 pt-8">
+                <span class="text-yellow-400 font-semibold text-sm tracking-wide uppercase">Side-by-Side</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4">Complete Tools Comparison</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto rounded-full"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Compare all the development tools covered on this website</p>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 mb-16 glass-card animate-border particles" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0;">
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-gray-700 bg-gray-900/50">
+                                <th class="py-4 px-4 text-cyan-400 font-semibold">Tool</th>
+                                <th class="py-4 px-4 text-cyan-400 font-semibold">Category</th>
+                                <th class="py-4 px-4 text-cyan-400 font-semibold">Price</th>
+                                <th class="py-4 px-4 text-cyan-400 font-semibold">Ease of Use</th>
+                                <th class="py-4 px-4 text-cyan-400 font-semibold">Recommended For</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                                <td class="py-4 px-4 font-semibold">VS Code</td>
+                                <td class="py-4 px-4"><span class="text-cyan-400">Code Editor</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">All Developers</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Sublime Text</td>
+                            <td class="py-4 px-4"><span class="text-cyan-400">Code Editor</span></td>
+                            <td class="py-4 px-4"><span class="text-yellow-400">$99</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Speed-focused Devs</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Git</td>
+                            <td class="py-4 px-4"><span class="text-purple-400">Version Control</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐</td>
+                            <td class="py-4 px-4">All Developers</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">GitHub</td>
+                            <td class="py-4 px-4"><span class="text-purple-400">Version Control</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free / Pro</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Teams & Open Source</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Figma</td>
+                            <td class="py-4 px-4"><span class="text-pink-400">Design Tool</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free / Pro</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">UI/UX Designers</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Canva</td>
+                            <td class="py-4 px-4"><span class="text-pink-400">Design Tool</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free / Pro</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Beginners & Marketing</td>
+                        </tr>
+                        <tr class="hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Photopea</td>
+                            <td class="py-4 px-4"><span class="text-pink-400">Design Tool</span></td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐</td>
+                            <td class="py-4 px-4">Students & Budget</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 glass-card hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">
+                <h2 class="text-2xl font-bold text-white mb-6 hover-bounce">
+                    <i class="fas fa-graduation-cap text-cyan-400 mr-3 animate-float"></i>Learning Platforms
+                </h2>
+                <p class="text-gray-400 mb-6">Free resources to learn programming and development tools:</p>
+                
+                <div class="space-y-4 list-animate">
+                    <a href="https://www.freecodecamp.org/" target="_blank" class="flex items-center p-4 bg-gray-900/50 rounded-xl hover:bg-gray-700/50 transition-all duration-300 group hover:translate-x-2">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 hover-glow">
+                            <i class="fas fa-fire text-green-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-white font-semibold group-hover:text-cyan-400 transition-colors">freeCodeCamp</h4>
+                            <p class="text-gray-400 text-sm">Free coding courses and certifications</p>
+                        </div>
+                        <i class="fas fa-external-link-alt text-gray-500 group-hover:text-cyan-400"></i>
+                    </a>
+
+                    <a href="https://www.w3schools.com/" target="_blank" class="flex items-center p-4 bg-gray-900/50 rounded-xl hover:bg-gray-700/50 transition-all duration-300 group hover:translate-x-2">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 hover-glow">
+                            <i class="fas fa-book text-green-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-white font-semibold group-hover:text-cyan-400 transition-colors">W3Schools</h4>
+                            <p class="text-gray-400 text-sm">Web development tutorials and references</p>
+                        </div>
+                        <i class="fas fa-external-link-alt text-gray-500 group-hover:text-cyan-400"></i>
+                    </a>
+
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" class="flex items-center p-4 bg-gray-900/50 rounded-xl hover:bg-gray-700/50 transition-all duration-300 group hover:translate-x-2">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 hover-glow">
+                            <i class="fas fa-code text-green-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-white font-semibold group-hover:text-cyan-400 transition-colors">GeeksforGeeks</h4>
+                            <p class="text-gray-400 text-sm">Computer science and programming articles</p>
+                        </div>
+                        <i class="fas fa-external-link-alt text-gray-500 group-hover:text-cyan-400"></i>
+                    </a>
+
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank" class="flex items-center p-4 bg-gray-900/50 rounded-xl hover:bg-gray-700/50 transition-all duration-300 group hover:translate-x-2">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mr-4 hover-glow">
+                            <i class="fab fa-firefox text-orange-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-white font-semibold group-hover:text-cyan-400 transition-colors">MDN Web Docs</h4>
+                            <p class="text-gray-400 text-sm">Official web technology documentation</p>
+                        </div>
+                        <i class="fas fa-external-link-alt text-gray-500 group-hover:text-cyan-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 glass-card hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0;">
+                <h2 class="text-2xl font-bold text-white mb-6 hover-bounce">
+                    <i class="fab fa-youtube text-red-500 mr-3 animate-float"></i>Video Tutorials
+                </h2>
+                <p class="text-gray-400 mb-6">Recommended YouTube channels and tutorials for beginners:</p>
+                
+                <div class="space-y-4 list-animate">
+                    <div class="p-4 bg-gray-900/50 rounded-xl tilt-card transition-all duration-300 hover:bg-gray-800/50">
+                        <h4 class="text-white font-semibold mb-2">Git & GitHub for Beginners</h4>
+                        <p class="text-gray-400 text-sm mb-3">Learn version control from scratch</p>
+                        <a href="https://www.youtube.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-sm animated-underline">
+                            <i class="fab fa-youtube mr-2"></i>Watch on YouTube
+                        </a>
+                    </div>
+
+                    <div class="p-4 bg-gray-900/50 rounded-xl tilt-card transition-all duration-300 hover:bg-gray-800/50">
+                        <h4 class="text-white font-semibold mb-2">VS Code Tips & Tricks</h4>
+                        <p class="text-gray-400 text-sm mb-3">Master your code editor</p>
+                        <a href="https://www.youtube.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-sm">
+                            <i class="fab fa-youtube mr-2"></i>Watch on YouTube
+                        </a>
+                    </div>
+
+                    <div class="p-4 bg-gray-900/50 rounded-xl">
+                        <h4 class="text-white font-semibold mb-2">Figma UI Design Tutorial</h4>
+                        <p class="text-gray-400 text-sm mb-3">Create beautiful interfaces</p>
+                        <a href="https://www.youtube.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-sm">
+                            <i class="fab fa-youtube mr-2"></i>Watch on YouTube
+                        </a>
+                    </div>
+
+                    <div class="p-4 bg-gray-900/50 rounded-xl">
+                        <h4 class="text-white font-semibold mb-2">Web Development Overview</h4>
+                        <p class="text-gray-400 text-sm mb-3">Introduction to programming tools</p>
+                        <a href="https://youtu.be/yHk7Vavmc7Q?si=aAowKzMDhuTsxTz6" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-sm">
+                            <i class="fab fa-youtube mr-2"></i>Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 mb-16">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">
+                <i class="fas fa-link text-purple-400 mr-3"></i>Official Tool Websites
+            </h2>
+            <p class="text-gray-400 text-center mb-8">Quick links to download and learn more about each tool</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <h3 class="text-cyan-400 font-bold mb-4 text-lg">Code Editors</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://code.visualstudio.com/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Visual Studio Code</a></li>
+                        <li><a href="https://www.sublimetext.com/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Sublime Text</a></li>
+                        <li><a href="https://atom.io/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Atom</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-purple-400 font-bold mb-4 text-lg">Version Control</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://git-scm.com/" target="_blank" class="text-gray-300 hover:text-purple-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Git</a></li>
+                        <li><a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-purple-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>GitHub</a></li>
+                        <li><a href="https://about.gitlab.com/" target="_blank" class="text-gray-300 hover:text-purple-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>GitLab</a></li>
+                        <li><a href="https://bitbucket.org/" target="_blank" class="text-gray-300 hover:text-purple-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Bitbucket</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-pink-400 font-bold mb-4 text-lg">Design Tools</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.figma.com/" target="_blank" class="text-gray-300 hover:text-pink-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Figma</a></li>
+                        <li><a href="https://www.canva.com/" target="_blank" class="text-gray-300 hover:text-pink-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Canva</a></li>
+                        <li><a href="https://adobexdplatform.com/" target="_blank" class="text-gray-300 hover:text-pink-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Adobe XD</a></li>
+                        <li><a href="https://www.sketch.com/" target="_blank" class="text-gray-300 hover:text-pink-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Sketch</a></li>
+                        <li><a href="https://www.photopea.com/" target="_blank" class="text-gray-300 hover:text-pink-400 transition-colors"><i class="fas fa-external-link-alt mr-2"></i>Photopea</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-2xl p-8 border border-cyan-500/30 mb-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">
+                        <i class="fas fa-download text-cyan-400 mr-3"></i>Downloadable Resources
+                    </h2>
+                    <p class="text-gray-400 mb-4">Helpful cheat sheets and quick reference guides:</p>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                                <i class="fas fa-file-pdf mr-2"></i>Git Cheat Sheet (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/resources-illustration.png" alt="Resources illustration" class="w-full h-48 object-cover rounded-xl bg-gray-700">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="text-gray-400 mb-4">Sources: freecodecamp.org, w3schools.com, geeksforgeeks.org, developer.mozilla.org, youtube.com</p>
+            <a href="index.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-bold rounded-lg hover:from-yellow-600 hover:to-orange-700 transition-all duration-300">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Home
+            </a>
+        </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 py-12 border-t border-gray-700/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text mb-4 inline-block">
+                        <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+                    </a>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your comprehensive resource for discovering and mastering the essential tools that make coding easier, faster, and more enjoyable.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com" target="_blank" class="footer-social-link">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="mailto:info@devtoolshub.com" class="footer-social-link">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="footer-social-link">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="footer-social-link">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="editors.html" class="footer-link">Code Editors</a></li>
+                        <li><a href="version-tools.html" class="footer-link">Version Control</a></li>
+                        <li><a href="design.html" class="footer-link">Design Tools</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="resources.html" class="footer-link">All Resources</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Tutorials</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 DevTools Hub. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="footer-link text-sm">Privacy Policy</a>
+                    <a href="#" class="footer-link text-sm">Terms of Service</a>
+                    <a href="#" class="footer-link text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

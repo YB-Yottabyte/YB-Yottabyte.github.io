@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Hub - Editors</title>
+    <meta name="description" content="Learn about popular code editors like Visual Studio Code, Sublime Text, and more.">
+    <meta name="keywords" content="code editors, vs code, sublime text, programming, development">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+            </a>
+            
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="relative px-3 py-2 text-cyan-400 font-bold">Editors</a></li>
+                <li><a href="version-tools.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Design</a></li>
+                <li><a href="resources.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Resources</a></li>
+                <li><a href="contact.html" class="nav-link relative px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">Contact</a></li>
+            </ul>
+
+            <input type="checkbox" id="mobileMenuToggle" class="hidden">
+            <label for="mobileMenuToggle" class="md:hidden text-cyan-400 hover:text-white transition-colors cursor-pointer">
+                <i class="fas fa-bars text-2xl"></i>
+            </label>
+        </nav>
+
+        <div id="mobileMenu" class="md:hidden bg-gray-900/98 backdrop-blur-lg border-t border-gray-700/50 mobile-menu-hidden">
+            <ul class="flex flex-col py-4">
+                <li><a href="index.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="block px-6 py-3 text-cyan-400 border-l-4 border-cyan-400 font-bold">Editors</a></li>
+                <li><a href="version-tools.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Design</a></li>
+                <li><a href="resources.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Resources</a></li>
+                <li><a href="contact.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-fade-in">
+        <section class="min-h-[80vh] flex items-center bg-gradient-to-br from-gray-900 via-gray-900 to-cyan-900/30 border-b border-gray-800">
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="animate-fade-in-up">
+                        <span class="inline-block px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-semibold tracking-wide uppercase mb-8 border border-cyan-500/30">
+                            <i class="fas fa-code mr-2"></i>Essential Tools
+                        </span>
+                        
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">Code Editors</h1>
+                        <p class="text-2xl text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text font-semibold mb-8">For Modern Developers</p>
+                        
+                        <p class="text-xl text-gray-300 leading-relaxed mb-10 max-w-xl">
+                            Write, edit, and organize your code more efficiently. 
+                            Discover the most powerful editors used by developers worldwide.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Syntax highlighting & auto-complete</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Thousands of extensions</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Built-in debugging tools</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#tools" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-arrow-down mr-3"></i>
+                            Explore Editors
+                        </a>
+                    </div>
+
+                    <div class="relative animate-fade-scale">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-4 border border-gray-700/50">
+                            <img src="images/editors/image.png" alt="Visual Studio Code interface" class="w-full h-auto rounded-2xl shadow-2xl">
+                            <div class="absolute -bottom-4 -right-4 px-5 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl text-white font-semibold shadow-lg">
+                                <i class="fas fa-code mr-2"></i>VS Code & More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-900/95">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative flex items-center justify-center pt-8 animate-fade-scale">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 shadow-2xl w-full">
+                            <video autoplay loop muted width="100%" class="rounded-xl shadow-lg" style="max-height: 320px; object-fit: contain; background: #1f2937;">
+                                <source src="images/editors/developer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p class="text-center text-gray-400 text-sm mt-4">
+                                <i class="fas fa-play-circle text-cyan-400 mr-2"></i>Watch: Developer using a code editor
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-fade-in-up">
+                        <span class="inline-block px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 border border-cyan-500/30">
+                            <i class="fas fa-question-circle mr-2"></i>Learn More
+                        </span>
+                        
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Why Use a</h2>
+                        <p class="text-2xl text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold mb-6">Code Editor?</p>
+                        
+                        <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                            A code editor is your most important tool as a developer. It's where you'll spend hours writing, debugging, and perfecting your code. The right editor can dramatically improve your productivity.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-bolt text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Boost Productivity</h4>
+                                    <p class="text-gray-400 text-sm">Auto-complete, snippets, and shortcuts save hours of typing</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-bug text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Catch Errors Early</h4>
+                                    <p class="text-gray-400 text-sm">Syntax highlighting and linting spot mistakes instantly</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-puzzle-piece text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Extend with Plugins</h4>
+                                    <p class="text-gray-400 text-sm">Add features like Git integration, themes, and language support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 py-16">
+            <div id="tools" class="text-center mb-12 pt-8">
+                <span class="text-cyan-400 font-semibold text-sm tracking-wide uppercase">Explore the Best</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4">Featured Code Editors</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Discover the most popular code editors used by developers worldwide</p>
+            </div>
+
+            <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0;">
+                    <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-cyan-400/30 transition-all duration-300 bg-gradient-to-br from-cyan-900/20 via-gray-800 to-gray-900">
+                        <img src="images/editors/VS.png" alt="Visual Studio Code Interface" class="w-full h-44 object-contain hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex items-center mb-4 hover-bounce">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Visual Studio Code</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        VS Code is a free, open-source editor developed by Microsoft. It's lightweight yet powerful, with built-in Git support and thousands of extensions.
+                    </p>
+                    <h4 class="text-cyan-400 font-semibold mb-2">Key Features:</h4>
+                    <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>IntelliSense code completion</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Built-in debugging tools</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Extensive extension marketplace</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Integrated terminal</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-2">Best for: All Developers</p>
+                    <a href="https://code.visualstudio.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors animated-underline">
+                        <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-orange-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">
+                    <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-orange-400/30 transition-all duration-300 bg-gradient-to-br from-orange-900/20 via-gray-800 to-gray-900">
+                        <img src="images/editors/Sublime.png" alt="Sublime Text Interface" class="w-full h-44 object-contain hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex items-center mb-4 hover-bounce">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-feather-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Sublime Text</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Sublime Text is a sophisticated text editor known for its speed and ease of use. Perfect for developers who want a fast, responsive editing experience.
+                    </p>
+                    <h4 class="text-orange-400 font-semibold mb-2">Key Features:</h4>
+                    <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Lightning-fast performance</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Multiple selections</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Command palette</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Distraction-free mode</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-2">Best for: Speed-focused Developers</p>
+                    <a href="https://www.sublimetext.com/" target="_blank" class="text-orange-400 hover:text-orange-300 transition-colors animated-underline">
+                        <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                    </a>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-green-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0;">
+                    <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-green-400/30 transition-all duration-300 bg-gradient-to-br from-green-900/20 via-gray-800 to-gray-900">
+                        <img src="images/editors/Atom.png" alt="Atom Editor Interface" class="w-full h-44 object-contain hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex items-center mb-4 hover-bounce">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-atom text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Atom</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Atom is a free, open-source text editor by GitHub. Highly customizable and great for beginners who want to learn how editors work.
+                    </p>
+                    <h4 class="text-green-400 font-semibold mb-2">Key Features:</h4>
+                    <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Cross-platform support</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Built-in package manager</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Smart autocompletion</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>File system browser</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-2">Best for: Beginners, Customizers</p>
+                    <a href="https://atom.io/" target="_blank" class="text-green-400 hover:text-green-300 transition-colors animated-underline">
+                        <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                    </a>
+                </div>
+            </section>
+
+            <section class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 mb-16" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0;">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center">Code Editors Comparison</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-gray-700">
+                                <th class="py-3 px-4 text-cyan-400">Editor</th>
+                                <th class="py-3 px-4 text-cyan-400">Price</th>
+                                <th class="py-3 px-4 text-cyan-400">Ease of Use</th>
+                                <th class="py-3 px-4 text-cyan-400">Best For</th>
+                                <th class="py-3 px-4 text-cyan-400">Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-colors">
+                                <td class="py-3 px-4 font-semibold text-white">VS Code</td>
+                                <td class="py-3 px-4 text-green-400">Free</td>
+                                <td class="py-3 px-4">⭐⭐⭐⭐⭐</td>
+                                <td class="py-3 px-4 text-gray-400">All developers</td>
+                                <td class="py-3 px-4 text-gray-400">Windows, Mac, Linux</td>
+                            </tr>
+                            <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-colors">
+                                <td class="py-3 px-4 font-semibold text-white">Sublime Text</td>
+                                <td class="py-3 px-4 text-orange-400">$99 (Free trial)</td>
+                                <td class="py-3 px-4">⭐⭐⭐⭐</td>
+                                <td class="py-3 px-4 text-gray-400">Speed-focused developers</td>
+                                <td class="py-3 px-4 text-gray-400">Windows, Mac, Linux</td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition-colors">
+                                <td class="py-3 px-4 font-semibold text-white">Atom</td>
+                                <td class="py-3 px-4 text-green-400">Free</td>
+                                <td class="py-3 px-4">⭐⭐⭐⭐</td>
+                                <td class="py-3 px-4 text-gray-400">Beginners & customization</td>
+                                <td class="py-3 px-4 text-gray-400">Windows, Mac, Linux</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="text-center">
+                <p class="text-gray-400 mb-4">Sources: Information from official websites, ChatGPT, Gemini, Claude, and Pexels for images.</p>
+                <a href="index.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 py-12 border-t border-gray-700/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text mb-4 inline-block">
+                        <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+                    </a>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your comprehensive resource for discovering and mastering the essential tools that make coding easier, faster, and more enjoyable.
+                    </p>
+                </div>
+
+                <div class="col-span-2">
+                    <div class="flex flex-wrap justify-center md:justify-start items-center gap-6 mb-8">
+                        <a href="index.html" class="hover:text-cyan-400 transition-colors duration-300">Home</a>
+                        <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About Us</a>
+                        <a href="#" class="hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="hover:text-cyan-400 transition-colors duration-300">Terms of Use</a>
+                        <a href="#" class="hover:text-cyan-400 transition-colors duration-300">Site Maps</a>
+                        <a href="contact.html" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                    </div>
+                    <p class="text-gray-400 text-center md:text-left">
+                        Contact: <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">support@devtoolshub.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700/50 pt-8 text-left">
+                <p class="text-gray-400">&copy; 2025 DevTools Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

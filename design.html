@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Hub - Design Tools</title>
+    <meta name="description" content="Explore design tools like Figma and Canva for creating layouts and graphics.">
+    <meta name="keywords" content="figma, canva, design tools, ui, ux, web design">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+            </a>
+            
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Editors</a></li>
+                <li><a href="version-tools.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="nav-link active relative px-3 py-2 text-cyan-400 font-bold">Design</a></li>
+                <li><a href="resources.html" class="nav-link relative px-3 py-2 hover:text-cyan-400 transition-all duration-300">Resources</a></li>
+                <li><a href="contact.html" class="nav-link relative px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">Contact</a></li>
+            </ul>
+
+            <input type="checkbox" id="mobileMenuToggle" class="hidden">
+            <label for="mobileMenuToggle" class="md:hidden text-cyan-400 hover:text-white transition-colors cursor-pointer">
+                <i class="fas fa-bars text-2xl"></i>
+            </label>
+        </nav>
+
+        <div id="mobileMenu" class="md:hidden bg-gray-900/98 backdrop-blur-lg border-t border-gray-700/50 mobile-menu-hidden">
+            <ul class="flex flex-col py-4">
+                <li><a href="index.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Home</a></li>
+                <li><a href="editors.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Editors</a></li>
+                <li><a href="version-tools.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Version Tools</a></li>
+                <li><a href="design.html" class="block px-6 py-3 text-cyan-400 border-l-4 border-cyan-400 font-bold">Design</a></li>
+                <li><a href="resources.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Resources</a></li>
+                <li><a href="contact.html" class="block px-6 py-3 hover:text-cyan-400 hover:border-l-4 hover:border-cyan-400 transition-all duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-fade-in">
+        <!-- Big Hero Section -->
+        <section class="min-h-[80vh] flex items-center bg-gradient-to-br from-gray-900 via-gray-900 to-purple-900/30 border-b border-gray-800">
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Left: Text Content -->
+                    <div class="animate-fade-in-up">
+                        <span class="inline-block px-4 py-2 bg-pink-500/20 text-pink-400 rounded-full text-sm font-semibold tracking-wide uppercase mb-8 border border-pink-500/30">
+                            <i class="fas fa-palette mr-2"></i>Creative Tools
+                        </span>
+                        
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                            Design Tools
+                        </h1>
+                        <p class="text-2xl text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text font-semibold mb-8">
+                            For Modern Creators
+                        </p>
+                        
+                        <p class="text-xl text-gray-300 leading-relaxed mb-10 max-w-xl">
+                            Create stunning visuals, beautiful interfaces, and professional graphics. 
+                            From beginners to pros, find the perfect tool to bring your ideas to life.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Easy to learn for beginners</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Free options available</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-check text-green-400 text-xs"></i>
+                                </div>
+                                <span>Professional quality results</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#tools" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-arrow-down mr-3"></i>
+                            Explore Tools
+                        </a>
+                    </div>
+
+                    <!-- Right: Figma Landscape Image -->
+                    <div class="relative animate-fade-scale">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-4 border border-gray-700/50">
+                            <img src="images/Figm dark.png" alt="Figma design tool interface" class="w-full h-auto rounded-2xl shadow-2xl">
+                            <div class="absolute -bottom-4 -right-4 px-5 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl text-white font-semibold shadow-lg">
+                                <i class="fab fa-figma mr-2"></i>Figma & More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="container mx-auto px-6 py-16">
+            <!-- Tools Section Header -->
+            <div id="tools" class="text-center mb-12 pt-8">
+                <span class="text-pink-400 font-semibold text-sm tracking-wide uppercase">Explore the Best</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4">Featured Design Tools</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto rounded-full"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Discover the most popular design tools used by creators worldwide</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-purple-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0;">
+                <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-purple-400/30 transition-all duration-300 bg-gradient-to-br from-purple-900/20 via-gray-800 to-gray-900">
+                    <img src="images/Figm dark.png" alt="Figma Interface" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center mb-4 hover-bounce">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mr-4">
+                        <i class="fab fa-figma text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Figma</h3>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Figma is a cloud-based design tool that allows real-time collaboration. It's perfect for creating UI/UX designs, prototypes, and design systems that teams can work on together.
+                </p>
+                <h4 class="text-purple-400 font-semibold mb-2">Key Features:</h4>
+                <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Real-time collaboration</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Vector editing tools</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Prototyping & animations</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Design systems support</li>
+                </ul>
+                <p class="text-sm text-gray-500 mb-2">Best for: UI/UX Designers, Teams</p>
+                <a href="https://www.figma.com/" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors animated-underline">
+                    <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                </a>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">
+                <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-cyan-400/30 transition-all duration-300 bg-gradient-to-br from-cyan-900/20 via-gray-800 to-gray-900">
+                    <img src="images/Canva Landscape.png" alt="Canva Interface" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center mb-4 hover-bounce">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mr-4">
+                        <i class="fas fa-palette text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Canva</h3>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Canva is an easy-to-use graphic design platform with thousands of templates. It's great for creating social media posts, presentations, posters, and more without design experience.
+                </p>
+                <h4 class="text-cyan-400 font-semibold mb-2">Key Features:</h4>
+                <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Drag-and-drop interface</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Thousands of templates</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Stock photos & elements</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Brand kit feature</li>
+                </ul>
+                <p class="text-sm text-gray-500 mb-2">Best for: Beginners, Marketing</p>
+                <a href="https://www.canva.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors animated-underline">
+                    <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                </a>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-pink-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0;">
+                <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-pink-400/30 transition-all duration-300 bg-gradient-to-br from-pink-900/20 via-gray-800 to-gray-900">
+                    <img src="images/XD Landscape.png" alt="Adobe XD Interface" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center mb-4 hover-bounce">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center mr-4">
+                        <i class="fas fa-pen-nib text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Adobe XD</h3>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Adobe XD is a vector-based tool for designing and prototyping user experiences. It integrates with other Adobe products and offers powerful features for professional designers.
+                </p>
+                <h4 class="text-pink-400 font-semibold mb-2">Key Features:</h4>
+                <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Repeat grid feature</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Auto-animate</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Voice prototyping</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Adobe integration</li>
+                </ul>
+                <p class="text-sm text-gray-500 mb-2">Best for: Professional Designers</p>
+                <a href="https://adobexdplatform.com/" target="_blank" class="text-pink-400 hover:text-pink-300 transition-colors animated-underline">
+                    <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                </a>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-yellow-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0;">
+                <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-yellow-400/30 transition-all duration-300 bg-white">
+                    <img src="images/Sketch Landscape.png" alt="Sketch Interface" class="w-full h-44 object-contain bg-white hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center mb-4 hover-bounce">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center mr-4">
+                        <i class="fab fa-sketch text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Sketch</h3>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Sketch is a vector graphics editor for macOS, popular among UI/UX designers. It's known for its simplicity and powerful plugin ecosystem.
+                </p>
+                <h4 class="text-yellow-400 font-semibold mb-2">Key Features:</h4>
+                <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Symbol libraries</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Smart layout</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Extensive plugins</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Cloud collaboration</li>
+                </ul>
+                <p class="text-sm text-gray-500 mb-2">Best for: Mac Users, UI Design</p>
+                <a href="https://www.sketch.com/" target="_blank" class="text-yellow-400 hover:text-yellow-300 transition-colors animated-underline">
+                    <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                </a>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 card-3d hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.5s; opacity: 0;">
+                <div class="mb-5 rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-400/30 transition-all duration-300 bg-gray-100">
+                    <img src="images/Photopea Landscape.png" alt="Photopea Interface" class="w-full h-44 object-contain bg-gray-100 hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center mb-4 hover-bounce">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-4">
+                        <i class="fas fa-wand-magic-sparkles text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Photopea</h3>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    Photopea is a free online photo editor that works like Photoshop. It supports PSD, XCF, and Sketch files, making it a great alternative for students and budget-conscious designers.
+                </p>
+                <h4 class="text-blue-400 font-semibold mb-2">Key Features:</h4>
+                <ul class="text-gray-400 space-y-1 mb-4 list-animate">
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Free to use</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>PSD file support</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>No installation needed</li>
+                    <li><i class="fas fa-check text-green-400 mr-2"></i>Advanced editing tools</li>
+                </ul>
+                <p class="text-sm text-gray-500 mb-2">Best for: Students, Budget Users</p>
+                <a href="https://www.photopea.com/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors animated-underline">
+                    <i class="fas fa-external-link-alt mr-2"></i>Visit Official Website
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50 mb-16 glass-card animate-border particles" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.6s; opacity: 0;">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center animate-gradient-text">Design Tools Comparison</h2>
+            <p class="text-gray-400 text-center mb-6">Which tool is best for different types of users?</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-gray-700">
+                            <th class="py-4 px-4 text-pink-400 font-semibold">Tool</th>
+                            <th class="py-4 px-4 text-pink-400 font-semibold">Price</th>
+                            <th class="py-4 px-4 text-pink-400 font-semibold">Ease of Use</th>
+                            <th class="py-4 px-4 text-pink-400 font-semibold">Best For</th>
+                            <th class="py-4 px-4 text-pink-400 font-semibold">Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Figma</td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free / Pro $12/mo</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">UI/UX Design, Teams</td>
+                            <td class="py-4 px-4">Web, Desktop</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Canva</td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free / Pro $13/mo</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Beginners, Marketing</td>
+                            <td class="py-4 px-4">Web, Mobile</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Adobe XD</td>
+                            <td class="py-4 px-4"><span class="text-yellow-400">$10/mo</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Professional Design</td>
+                            <td class="py-4 px-4">Windows, Mac</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50 hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Sketch</td>
+                            <td class="py-4 px-4"><span class="text-yellow-400">$10/mo</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐⭐</td>
+                            <td class="py-4 px-4">Mac UI Design</td>
+                            <td class="py-4 px-4">Mac only</td>
+                        </tr>
+                        <tr class="hover:bg-gray-700/30 transition-all duration-300">
+                            <td class="py-4 px-4 font-semibold">Photopea</td>
+                            <td class="py-4 px-4"><span class="text-green-400">Free</span></td>
+                            <td class="py-4 px-4">⭐⭐⭐</td>
+                            <td class="py-4 px-4">Photo Editing</td>
+                            <td class="py-4 px-4">Web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-800/70 via-gray-800/50 to-purple-900/20 rounded-3xl p-10 border border-gray-700/50 mb-16 glass-card hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.7s; opacity: 0;">
+            <div class="text-center mb-10">
+                <span class="text-pink-400 font-semibold text-sm tracking-wide uppercase">From Concept to Creation</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4 animate-gradient-text">Design Process Overview</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden border border-gray-700/30 bg-gradient-to-br from-pink-900/10 via-purple-900/10 to-gray-900 p-6 hover:border-pink-400/30 transition-all duration-500">
+                    <img src="images/Illustration.png" alt="Design process illustration" class="w-full h-80 object-contain hover:scale-105 transition-transform duration-500">
+                    <p class="text-gray-400 text-center mt-4 text-lg">The design process typically involves research, wireframing, prototyping, and user testing.</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-white mb-6">The 5 Key Steps</h3>
+                    <div class="space-y-5">
+                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-pink-400/30 transition-all duration-300 group">
+                            <span class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">1</span>
+                            <div>
+                                <span class="text-white font-semibold text-lg">Research & Discovery</span>
+                                <p class="text-gray-400 text-sm">Understand user needs and requirements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-purple-400/30 transition-all duration-300 group">
+                            <span class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">2</span>
+                            <div>
+                                <span class="text-white font-semibold text-lg">Wireframing</span>
+                                <p class="text-gray-400 text-sm">Create basic layout sketches</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-blue-400/30 transition-all duration-300 group">
+                            <span class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">3</span>
+                            <div>
+                                <span class="text-white font-semibold text-lg">Visual Design</span>
+                                <p class="text-gray-400 text-sm">Design high-fidelity mockups</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-cyan-400/30 transition-all duration-300 group">
+                            <span class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">4</span>
+                            <div>
+                                <span class="text-white font-semibold text-lg">Prototyping</span>
+                                <p class="text-gray-400 text-sm">Build interactive prototypes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-green-400/30 transition-all duration-300 group">
+                            <span class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">5</span>
+                            <div>
+                                <span class="text-white font-semibold text-lg">Testing & Iteration</span>
+                                <p class="text-gray-400 text-sm">Test with users and refine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center animate-fade-in-up">
+            <p class="text-gray-400 mb-4">Sources: figma.com, canva.com, adobexdplatform.com, sketch.com, photopea.com</p>
+            <a href="index.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 magnetic-btn">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Home
+            </a>
+        </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 py-12 border-t border-gray-700/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text mb-4 inline-block hover-bounce">
+                        <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
+                    </a>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your comprehensive resource for discovering and mastering the essential tools that make coding easier, faster, and more enjoyable.
+                    </p>
+                </div>
+
+                <div class="col-span-2">
+                    <div class="flex flex-wrap justify-center md:justify-start items-center gap-6 mb-8">
+                        <a href="index.html" class="footer-link hover:text-cyan-400 transition-colors duration-300">Home</a>
+                        <a href="#about" class="footer-link hover:text-cyan-400 transition-colors duration-300">About Us</a>
+                        <a href="#" class="footer-link hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="footer-link hover:text-cyan-400 transition-colors duration-300">Terms of Use</a>
+                        <a href="#" class="footer-link hover:text-cyan-400 transition-colors duration-300">Site Maps</a>
+                        <a href="contact.html" class="footer-link hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                    </div>
+                    <p class="text-gray-400 text-center md:text-left">Contact: <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">support@devtoolshub.com</a></p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700/50 pt-8 text-left">
+                <p class="text-gray-400">&copy; 2025 DevTools Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
