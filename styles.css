@@ -8,6 +8,53 @@ body {
     font-size: 1.1rem;
 }
 
+/* ==========================================
+   ACCESSIBILITY STYLES
+   ========================================== */
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {
+    outline: 2px solid #06b6d4;
+    outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast for text */
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+/* Focus visible for better keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #06b6d4;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==========================================
+   END ACCESSIBILITY STYLES
+   ========================================== */
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -317,25 +364,6 @@ h3 {
 
 .footer-link:hover {
     color: #06b6d4;
-}
-
-.footer-social-link {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: #1f2937;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ca3af;
-    transition: all 0.3s ease;
-    transform: scale(1);
-}
-
-.footer-social-link:hover {
-    color: white;
-    background-color: #06b6d4;
-    transform: scale(1.1);
 }
 
 .floating-icons {

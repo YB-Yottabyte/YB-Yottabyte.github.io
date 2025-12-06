@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevTools Hub - Design Tools</title>
-    <meta name="description" content="Explore design tools like Figma and Canva for creating layouts and graphics.">
-    <meta name="keywords" content="figma, canva, design tools, ui, ux, web design">
+    <meta name="description" content="Explore design tools like Figma, Canva, Adobe XD, Sketch, and Photopea for UI/UX design.">
+    <meta name="keywords" content="figma, canva, adobe xd, sketch, photopea, design tools, ui, ux, web design">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
-    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
             <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
                 <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
             </a>
@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <main class="page-fade-in">
+    <main id="main-content" role="main" class="page-fade-in">
         <!-- Big Hero Section -->
         <section class="min-h-[80vh] flex items-center bg-gradient-to-br from-gray-900 via-gray-900 to-purple-900/30 border-b border-gray-800">
             <div class="container mx-auto px-6 py-16">
@@ -95,7 +95,6 @@
                         </a>
                     </div>
 
-                    <!-- Right: Figma Landscape Image -->
                     <div class="relative animate-fade-scale">
                         <div class="absolute -inset-4 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-3xl blur-2xl"></div>
                         <div class="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-4 border border-gray-700/50">
@@ -109,9 +108,78 @@
             </div>
         </section>
 
-        <!-- Main Content -->
+        <!-- Design Process Overview Section -->
+        <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-900/95">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left: Image -->
+                    <div class="relative animate-fade-scale">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 shadow-2xl w-full">
+                            <img src="images/Illustration.png" alt="Design process illustration" class="w-full h-80 object-contain rounded-xl">
+                            <p class="text-center text-gray-400 text-sm mt-4">
+                                <i class="fas fa-lightbulb text-pink-400 mr-2"></i>From concept to creation
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Text Content -->
+                    <div class="animate-fade-in-up">
+                        <span class="inline-block px-4 py-2 bg-pink-500/20 text-pink-400 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 border border-pink-500/30">
+                            <i class="fas fa-pencil-ruler mr-2"></i>Learn More
+                        </span>
+                        
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Design Process</h2>
+                        <p class="text-2xl text-transparent bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text font-semibold mb-6">Overview</p>
+                        
+                        <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                            The design process involves research, wireframing, prototyping, and user testing. Understanding these steps helps you create better user experiences.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-search text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Research & Discovery</h4>
+                                    <p class="text-gray-400 text-sm">Understand user needs and requirements</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-pencil-alt text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Wireframing & Visual Design</h4>
+                                    <p class="text-gray-400 text-sm">Create layouts and high-fidelity mockups</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-mobile-alt text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Prototyping</h4>
+                                    <p class="text-gray-400 text-sm">Build interactive prototypes for testing</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-check-circle text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Testing & Iteration</h4>
+                                    <p class="text-gray-400 text-sm">Test with users and refine your designs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container mx-auto px-6 py-16">
-            <!-- Tools Section Header -->
             <div id="tools" class="text-center mb-12 pt-8">
                 <span class="text-pink-400 font-semibold text-sm tracking-wide uppercase">Explore the Best</span>
                 <h2 class="text-4xl font-bold text-white mt-2 mb-4">Featured Design Tools</h2>
@@ -306,60 +374,6 @@
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-gray-800/70 via-gray-800/50 to-purple-900/20 rounded-3xl p-10 border border-gray-700/50 mb-16 glass-card hover-glow" style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.7s; opacity: 0;">
-            <div class="text-center mb-10">
-                <span class="text-pink-400 font-semibold text-sm tracking-wide uppercase">From Concept to Creation</span>
-                <h2 class="text-4xl font-bold text-white mt-2 mb-4 animate-gradient-text">Design Process Overview</h2>
-                <div class="h-1 w-20 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="rounded-2xl overflow-hidden border border-gray-700/30 bg-gradient-to-br from-pink-900/10 via-purple-900/10 to-gray-900 p-6 hover:border-pink-400/30 transition-all duration-500">
-                    <img src="images/Illustration.png" alt="Design process illustration" class="w-full h-80 object-contain hover:scale-105 transition-transform duration-500">
-                    <p class="text-gray-400 text-center mt-4 text-lg">The design process typically involves research, wireframing, prototyping, and user testing.</p>
-                </div>
-                <div class="flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold text-white mb-6">The 5 Key Steps</h3>
-                    <div class="space-y-5">
-                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-pink-400/30 transition-all duration-300 group">
-                            <span class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">1</span>
-                            <div>
-                                <span class="text-white font-semibold text-lg">Research & Discovery</span>
-                                <p class="text-gray-400 text-sm">Understand user needs and requirements</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-purple-400/30 transition-all duration-300 group">
-                            <span class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">2</span>
-                            <div>
-                                <span class="text-white font-semibold text-lg">Wireframing</span>
-                                <p class="text-gray-400 text-sm">Create basic layout sketches</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-blue-400/30 transition-all duration-300 group">
-                            <span class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">3</span>
-                            <div>
-                                <span class="text-white font-semibold text-lg">Visual Design</span>
-                                <p class="text-gray-400 text-sm">Design high-fidelity mockups</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-cyan-400/30 transition-all duration-300 group">
-                            <span class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">4</span>
-                            <div>
-                                <span class="text-white font-semibold text-lg">Prototyping</span>
-                                <p class="text-gray-400 text-sm">Build interactive prototypes</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-gray-800/50 hover:bg-gray-700/50 rounded-xl p-4 border border-gray-700/30 hover:border-green-400/30 transition-all duration-300 group">
-                            <span class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white font-bold text-lg mr-5 shadow-lg group-hover:scale-110 transition-transform">5</span>
-                            <div>
-                                <span class="text-white font-semibold text-lg">Testing & Iteration</span>
-                                <p class="text-gray-400 text-sm">Test with users and refine</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="text-center animate-fade-in-up">
             <p class="text-gray-400 mb-4">Sources: figma.com, canva.com, adobexdplatform.com, sketch.com, photopea.com</p>
             <a href="index.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 magnetic-btn">
@@ -391,7 +405,7 @@
                         <a href="#" class="footer-link hover:text-cyan-400 transition-colors duration-300">Site Maps</a>
                         <a href="contact.html" class="footer-link hover:text-cyan-400 transition-colors duration-300">Contact</a>
                     </div>
-                    <p class="text-gray-400 text-center md:text-left">Contact: <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">support@devtoolshub.com</a></p>
+                    <p class="text-gray-400 text-center md:text-left">Contact: <span class="text-cyan-400">support@devtoolshub.com</span></p>
                 </div>
             </div>
 

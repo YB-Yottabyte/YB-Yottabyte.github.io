@@ -7,8 +7,6 @@
     <title>DevTools Hub - Contact</title>
     <meta name="description" content="Contact us with your feedback, questions, or suggestions.">
     <meta name="keywords" content="contact, feedback, form, development tools">
-    
-    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -16,8 +14,8 @@
 
 <body class="bg-gray-900 text-white font-sans">
 
-    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
             
             <!-- Logo -->
             <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
@@ -80,7 +78,7 @@
 
 
     <!-- ==================== MAIN CONTENT ==================== -->
-    <main class="container mx-auto px-6 py-12 page-fade-in">
+    <main id="main-content" role="main" class="container mx-auto px-6 py-12 page-fade-in">
 
         <!-- Page Header -->
         <div class="text-center mb-12">
@@ -112,7 +110,7 @@
                     Send a Message
                 </h2>
                 
-                <form id="contactForm" class="space-y-6">
+                <form id="contactForm" action="#" class="space-y-6">
 
                     <!-- Email Field -->
                     <div>
@@ -250,7 +248,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Information Card -->
                 <div class="bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 glass-card" 
                      style="animation: fade-scale 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">
                     
@@ -262,9 +259,7 @@
                     <div class="space-y-3">
                         <div class="flex items-center">
                             <i class="fas fa-envelope text-cyan-400 w-6"></i>
-                            <a href="mailto:support@devtoolshub.com" class="text-gray-300 hover:text-cyan-400 ml-3">
-                                support@devtoolshub.com
-                            </a>
+                            <span class="text-gray-300 ml-3">support@devtoolshub.com</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-globe text-purple-400 w-6"></i>
@@ -346,10 +341,7 @@
                     </div>
                     
                     <p class="text-gray-400 text-center md:text-left">
-                        Contact: 
-                        <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
-                            support@devtoolshub.com
-                        </a>
+                        Contact: <span class="text-cyan-400">support@devtoolshub.com</span>
                     </p>
                 </div>
             </div>

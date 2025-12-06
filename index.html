@@ -12,8 +12,8 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
-    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
             <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
                 <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
             </a>
@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
             <div class="absolute inset-0 bg-black/40"></div>
             
@@ -319,7 +319,7 @@
                         <a href="#" class="footer-link hover:text-cyan-400 transition-colors duration-300">Site Maps</a>
                         <a href="contact.html" class="footer-link hover:text-cyan-400 transition-colors duration-300">Contact</a>
                     </div>
-                    <p class="text-gray-400 text-center md:text-left">Contact: <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">support@devtoolshub.com</a></p>
+                    <p class="text-gray-400 text-center md:text-left">Contact: <span class="text-cyan-400">support@devtoolshub.com</span></p>
                 </div>
             </div>
 

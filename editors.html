@@ -12,8 +12,8 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
-    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="bg-gray-900/95 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50 shadow-xl" role="banner">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
             <a href="index.html" class="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text hover:scale-105 transition-transform duration-300">
                 <i class="fas fa-terminal mr-2 text-cyan-400"></i>DevTools Hub
             </a>
@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <main class="page-fade-in">
+    <main id="main-content" role="main" class="page-fade-in">
         <section class="min-h-[80vh] flex items-center bg-gradient-to-br from-gray-900 via-gray-900 to-cyan-900/30 border-b border-gray-800">
             <div class="container mx-auto px-6 py-16">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -108,7 +108,7 @@
                     <div class="relative flex items-center justify-center pt-8 animate-fade-scale">
                         <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
                         <div class="relative bg-gray-800/50 rounded-2xl p-6 border border-gray-700/50 shadow-2xl w-full">
-                            <video autoplay loop muted width="100%" class="rounded-xl shadow-lg" style="max-height: 320px; object-fit: contain; background: #1f2937;">
+                            <video controls width="100%" class="rounded-xl shadow-lg" style="max-height: 320px; object-fit: contain; background: #1f2937;">
                                 <source src="images/developer.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -324,7 +324,7 @@
                         <a href="contact.html" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
                     </div>
                     <p class="text-gray-400 text-center md:text-left">
-                        Contact: <a href="mailto:support@devtoolshub.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">support@devtoolshub.com</a>
+                        Contact: <span class="text-cyan-400">support@devtoolshub.com</span>
                     </p>
                 </div>
             </div>
