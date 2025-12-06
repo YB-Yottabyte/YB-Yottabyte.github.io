@@ -8,11 +8,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* ==========================================
-   ACCESSIBILITY STYLES
-   ========================================== */
-
-/* Focus styles for keyboard navigation */
 a:focus,
 button:focus,
 input:focus,
@@ -23,7 +18,6 @@ select:focus,
     outline-offset: 2px;
 }
 
-/* Ensure sufficient color contrast for text */
 .text-gray-300 {
     color: #d1d5db;
 }
@@ -32,7 +26,6 @@ select:focus,
     color: #9ca3af;
 }
 
-/* Focus visible for better keyboard navigation */
 a:focus-visible,
 button:focus-visible {
     outline: 3px solid #06b6d4;
@@ -40,7 +33,6 @@ button:focus-visible {
     border-radius: 4px;
 }
 
-/* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -50,10 +42,6 @@ button:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
-
-/* ==========================================
-   END ACCESSIBILITY STYLES
-   ========================================== */
 
 h1 {
     font-size: 3rem;
@@ -530,11 +518,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ==========================================
-   MODERN ANIMATIONS
-   ========================================== */
-
-/* Page fade in animation */
 .page-fade-in {
     animation: pageFadeIn 0.6s ease-out forwards;
 }
@@ -550,7 +533,6 @@ html {
     }
 }
 
-/* Fade scale animation */
 @keyframes fade-scale {
     from {
         opacity: 0;
@@ -566,7 +548,6 @@ html {
     animation: fade-scale 0.6s ease-out forwards;
 }
 
-/* Floating animation */
 @keyframes floating {
     0%, 100% {
         transform: translateY(0);
@@ -580,7 +561,6 @@ html {
     animation: floating 3s ease-in-out infinite;
 }
 
-/* Gradient text animation */
 @keyframes gradient-shift {
     0%, 100% {
         background-position: 0% 50%;
@@ -599,7 +579,6 @@ html {
     animation: gradient-shift 5s ease infinite;
 }
 
-/* Pulsing glow effect */
 @keyframes pulse-glow {
     0%, 100% {
         box-shadow: 0 0 5px rgba(6, 182, 212, 0.5);
@@ -613,7 +592,6 @@ html {
     animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* Glass card effect */
 .glass-card {
     background: rgba(31, 41, 55, 0.6);
     backdrop-filter: blur(12px);
@@ -628,7 +606,6 @@ html {
     transform: translateY(-5px);
 }
 
-/* Hover glow effect */
 .hover-glow {
     transition: all 0.3s ease;
 }
@@ -637,7 +614,6 @@ html {
     box-shadow: 0 0 30px rgba(6, 182, 212, 0.3), 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* 3D Card effect */
 .card-3d {
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -648,7 +624,6 @@ html {
     transform: rotateX(5deg) rotateY(5deg) translateY(-10px);
 }
 
-/* Tilt card effect */
 .tilt-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -658,7 +633,6 @@ html {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Animated underline */
 .animated-underline {
     position: relative;
     display: inline-block;
@@ -679,7 +653,6 @@ html {
     width: 100%;
 }
 
-/* Icon spin on hover */
 .icon-spin {
     transition: transform 0.5s ease;
 }
@@ -688,7 +661,6 @@ html {
     transform: rotate(360deg);
 }
 
-/* Hover bounce effect */
 .hover-bounce {
     transition: transform 0.3s ease;
 }
@@ -706,12 +678,10 @@ html {
     }
 }
 
-/* Rotate on hover */
 .hover-rotate:hover {
     transform: rotate(15deg) scale(1.1);
 }
 
-/* Magnetic button effect */
 .magnetic-btn {
     position: relative;
     transition: all 0.3s ease;
@@ -721,7 +691,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Button shine effect */
 .btn-shine {
     position: relative;
     overflow: hidden;
@@ -742,7 +711,6 @@ html {
     left: 100%;
 }
 
-/* Ripple effect */
 .ripple {
     position: relative;
     overflow: hidden;
@@ -770,7 +738,6 @@ html {
     transition: 0s;
 }
 
-/* Image zoom effect */
 .img-zoom {
     overflow: hidden;
     border-radius: 12px;
@@ -784,7 +751,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Animated border */
 @keyframes border-glow {
     0%, 100% {
         border-color: rgba(6, 182, 212, 0.3);
@@ -798,7 +764,6 @@ html {
     animation: border-glow 3s ease-in-out infinite;
 }
 
-/* List items animate in */
 .list-animate > * {
     opacity: 0;
     animation: listFadeIn 0.5s ease-out forwards;
@@ -822,7 +787,6 @@ html {
     }
 }
 
-/* Morphing background shapes */
 @keyframes morph {
     0%, 100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -836,7 +800,6 @@ html {
     animation: morph 8s ease-in-out infinite;
 }
 
-/* Particles background effect */
 .particles {
     position: relative;
     overflow: hidden;
@@ -866,10 +829,6 @@ html {
     }
 }
 
-/* ==========================================
-   END MODERN ANIMATIONS
-   ========================================== */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -897,7 +856,6 @@ html {
     display: block !important;
 }
 
-/* Icon toggle for hamburger menu */
 #mobileMenuToggle:checked + label i::before {
     content: "\f00d";
 }
@@ -906,11 +864,6 @@ html {
     content: "\f0c9";
 }
 
-/* ==========================================
-   EDITORS PAGE STYLES
-   ========================================== */
-
-/* Color Variables */
 .text-cyan { color: #06b6d4; }
 .text-purple { color: #a855f7; }
 .text-green { color: #22c55e; }
@@ -928,7 +881,6 @@ html {
 .bg-primary { background-color: #111827; }
 .gradient-primary { background: linear-gradient(to right, #06b6d4, #3b82f6); }
 
-/* Page Header Styles */
 .page-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -956,7 +908,6 @@ html {
     border-radius: 9999px;
 }
 
-/* Card Base Styles */
 .card-base {
     background: rgba(31, 41, 55, 0.5);
     border-radius: 1rem;
@@ -964,7 +915,6 @@ html {
     border: 1px solid rgba(75, 85, 99, 0.5);
 }
 
-/* Editor Cards */
 .editor-card {
     background: rgba(31, 41, 55, 0.5);
     border-radius: 1rem;
@@ -1001,7 +951,6 @@ html {
     border-color: rgba(59, 130, 246, 0.5);
 }
 
-/* Feature Lists */
 .feature-list {
     color: #9ca3af;
     margin-bottom: 1rem;
@@ -1019,7 +968,6 @@ html {
     margin-right: 0.5rem;
 }
 
-/* Data Tables */
 .data-table {
     width: 100%;
     text-align: left;
@@ -1057,7 +1005,6 @@ html {
     color: #eab308;
 }
 
-/* Image Zoom Effect */
 .img-zoom {
     overflow: hidden;
     border-radius: 0.75rem;
@@ -1071,7 +1018,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Button Styles */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -1088,7 +1034,6 @@ html {
     transform: scale(1.05);
 }
 
-/* Design Page Cards */
 .design-card {
     background: rgba(31, 41, 55, 0.5);
     border-radius: 1rem;
@@ -1102,7 +1047,6 @@ html {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Process Step Numbers */
 .step-number {
     width: 2rem;
     height: 2rem;
@@ -1115,7 +1059,6 @@ html {
     margin-right: 1rem;
 }
 
-/* List Stagger Animation */
 .list-animate > * {
     opacity: 0;
     animation: listItemFade 0.5s ease-out forwards;
